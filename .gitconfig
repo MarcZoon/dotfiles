@@ -1,3 +1,5 @@
+# .gitconfig from https://gitlab.com/m3361/dotfiles
+
 [user]
 	name = MarcZoon
 	email = marc@famzoon.nl
