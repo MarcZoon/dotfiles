@@ -4,5 +4,16 @@
 
 [alias]
 	tree = log --oneline --graph --decorate --all
+
 [init]
 	defaultBranch = main
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+
+[url "https://github.com"]
+	insteadOf = gh:
+[url "https://gitlab.com"]
+	insteadof = gl:
