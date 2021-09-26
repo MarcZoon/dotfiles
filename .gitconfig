@@ -1,0 +1,8 @@
+[user]
+	name = MarcZoon
+	email = marc@famzoon.nl
+
+[alias]
+	tree = log --oneline --graph --decorate --all
+[init]
+	defaultBranch = main
