@@ -5,7 +5,8 @@
 	email = marc@famzoon.nl
 
 [alias]
-	tree = log --oneline --graph --decorate --all
+	tree-ol = log --oneline --graph --decorate --all
+    tree = log --graph --decorate -all
 
 [init]
 	defaultBranch = main
