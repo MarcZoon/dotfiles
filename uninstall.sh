@@ -11,4 +11,4 @@ for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     fi
 done
 
-echo "Uninstalled"
+echo "Removed existing symlinks and restored original files."
