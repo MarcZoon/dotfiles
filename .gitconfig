@@ -1,8 +1,7 @@
 # .gitconfig from https://gitlab.com/m3361/dotfiles
 
-[user]
-	name = Marc Zoon
-	email = marc@famzoon.nl
+[include]
+    path = ~/.gitconfig.local
 
 [alias]
 	tree = log --oneline --graph --decorate --all
