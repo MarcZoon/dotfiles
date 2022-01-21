@@ -11,4 +11,11 @@ for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     fi
 done
 
+# Restore original .vim folder (if it exists)
+if [[ -d ~/.vim.bak ]]
+then
+    rm ~/.vim
+    mv ~/.vim.bak ~/.vim
+fi
+
 echo "Removed existing symlinks and restored original files."

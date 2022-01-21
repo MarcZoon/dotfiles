@@ -1,5 +1,3 @@
-# .gitconfig from https://gitlab.com/m3361/dotfiles
-
 [include]
     path = ~/.gitconfig.local
 
