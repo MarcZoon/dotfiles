@@ -14,12 +14,6 @@ for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     ln -s $PWD/$file ~/$file
 done
 
-# symlink .vim folder
-if [[ -d ~/.vim ]]
-then
-    mv ~/.vim ~/.vim.bak
-fi
-ln -s ~/dotfiles/.vim ~
 
 echo "Backed up original files and created symlinks."
 
