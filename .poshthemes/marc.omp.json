@@ -42,10 +42,7 @@
                     "properties": {
                         "fetch_status": true,
                         "fetch_stash_count": true,
-                        "fetch_upstream_icon": true,
-                        "untracked_modes": {
-                            "/Users/user/Projects/oh-my-posh/": "no"
-                        }
+                        "fetch_upstream_icon": true
                     }
                 }
             ]
