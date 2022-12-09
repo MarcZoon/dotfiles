@@ -6,6 +6,7 @@
 # Symlink new .file
 
 ./uninstall.sh
+./install_packages.sh
 
 for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     if [ -e ~/$file ]; then
