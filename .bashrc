@@ -125,4 +125,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-eval "$(oh-my-posh init bash)"
+#eval "$(oh-my-posh init bash)"
