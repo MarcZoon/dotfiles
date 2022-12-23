@@ -44,4 +44,13 @@ require('lspconfig')['pyright'].setup{
     flags = lsp_flags,
     capabilities = capabilities,
 }
-
+require('lspconfig')['html'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
+require('lspconfig')['tsserver'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
