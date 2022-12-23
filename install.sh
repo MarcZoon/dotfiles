@@ -23,8 +23,11 @@ else
     cd repos
     if [ ! -d neovim ]; then
         git clone https://github.com/neovim/neovim
+        cd neovim
+    else
+        cd neovim
+        git pull
     fi
-    cd neovim
     make CMAKE_BUILD_TYPE=RelWithDebInfo
     sudo make install
     cd ../..
