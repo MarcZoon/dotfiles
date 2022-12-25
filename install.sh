@@ -14,6 +14,10 @@ else
     sudo apt install tmux -y
 fi
 
+# clone tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+
 # build neovim from source if not installed
 if command -v nvim > /dev/null; then
     echo "neovim already installed"
