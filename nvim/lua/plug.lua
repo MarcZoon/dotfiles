@@ -40,18 +40,19 @@ return require("packer").startup(function(use)
 	})
 	use({ "majutsushi/tagbar" })
 	use({ "Yggdroot/indentLine" })
-	use({ "tpope/vim-commentary" })
 	use({ "windwp/nvim-autopairs" })
 	use({ "romgrk/barbar.nvim" })
 	use({
 		"jose-elias-alvarez/null-ls.nvim",
 		requires = "nvim-lua/plenary.nvim",
 	})
-
+	use({ "preservim/nerdcommenter" })
+	use({ "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" })
 	-- LSP
 	use({ "williamboman/mason.nvim" })
 	use({ "williamboman/mason-lspconfig.nvim" })
 	use({ "neovim/nvim-lspconfig" })
+	use({ "mfussenegger/nvim-dap" })
 	use({ "hrsh7th/nvim-cmp" }) -- Autocompletion plugin
 	use({ "hrsh7th/cmp-nvim-lsp" }) -- LSP source for nvim-cmp
 	use({ "saadparwaiz1/cmp_luasnip" }) -- Snippets source for nvim-cmp
