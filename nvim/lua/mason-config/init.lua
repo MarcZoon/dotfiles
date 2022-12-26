@@ -5,3 +5,6 @@ require("mason-lspconfig").setup({
 require("mason-null-ls").setup({
 	automatic_installation = true,
 })
+require("mason-nvim-dap").setup({
+	automatic_installation = true,
+})

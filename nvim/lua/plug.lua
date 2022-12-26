@@ -12,7 +12,7 @@ local ensure_packer = function()
 	return false
 end
 
-local packer_bootstrap = ensure_packer()
+ensure_packer()
 
 --Start Packer
 return require("packer").startup(function(use)

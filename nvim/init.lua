@@ -7,6 +7,7 @@ vim.g.localleader = "\\"
 -- IMPORTS
 require("vars") -- Variables
 require("plug") -- Plugins
+vim.cmd([[PackerInstall]])
 require("opts") -- Options
 require("keys") -- Keymaps
 require("null-fs-config")

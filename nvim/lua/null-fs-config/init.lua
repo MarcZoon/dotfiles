@@ -5,6 +5,9 @@ local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
 	sources = {
+		diagnostics.eslint,
+		diagnostics.luacheck,
+		diagnostics.pylint,
 		formatting.black,
 		formatting.isort,
 		formatting.prettier,
