@@ -4,8 +4,9 @@ local opts = { noremap = true, silent = true }
 -- leave insert mode
 map("i", "<Leader>n", "<Esc>", opts)
 
--- Toggle nvim-tree
+-- nvim-tree
 map("n", "<Leader>x", [[:NvimTreeFocus]] .. "<Enter>", opts)
+map("n", "<Leader>X", [[:NvimTreeToggle]] .. "<Enter>", opts)
 
 -- Tab navigation
 map("n", "<Leader>1", "1gt", opts)
