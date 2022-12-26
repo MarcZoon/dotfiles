@@ -32,6 +32,7 @@ return require("packer").startup(function(use)
 	})
 	use({ "Mofiqul/dracula.nvim" })
 	use({ "rcarriga/nvim-notify" })
+	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 
 	--GENERAL
 	use({
