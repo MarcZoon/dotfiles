@@ -9,10 +9,10 @@ require("vars") -- Variables
 require("plug") -- Plugins
 require("opts") -- Options
 require("keys") -- Keymaps
+require("null-fs-config")
 require("mason-config")
 require("lsp-config.language-servers") -- LSP configurations
 require("lsp-config.nvim-cmp")
-require("formatter-config")
 require("plugin-configs.nvim-tree")
 require("plugin-configs.lualine")
 require("plugin-configs.nvim-autopairs")
