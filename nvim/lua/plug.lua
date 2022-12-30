@@ -68,4 +68,9 @@ return require("packer").startup(function(use)
 		run = ":TSUpdate",
 	})
 	use({ "nvim-treesitter/nvim-treesitter-refactor" })
+
+	use({
+		"danymat/neogen",
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
 end)
