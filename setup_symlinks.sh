@@ -24,6 +24,12 @@ if [ ! -L ~/.config/i3 ]; then
     ln -s $PWD/i3 ~/.config/i3
 fi
 
+# rofi
+if [ ! -L ~/.config/rofi ]; then
+    echo "Create rofi symlink"
+    ln -s $PWD/rofi ~/.config/rofi
+fi
+
 # dotfiles in root
 for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     if [ ! -L ~/$file ] && [ ! $file != ".gitignore" ]; then
