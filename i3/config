@@ -199,7 +199,6 @@ bar {
 # START APPLICATIONS
 bindsym $mod+Shift+Return exec --no-startup-id rofi options -theme dracula -show drun
 bindsym $mod+Shift+f exec flatpak run org.mozilla.firefox
-bindsym Print exec --no-startup-id shutter
 
 # ASSIGN WORKSPACES
 assign [class="firefox" instance="Navigator"] $web
@@ -250,3 +249,6 @@ bindsym $mod+x mode "$mode_display"
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 3%- && $refresh_i3status
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 3%+ && $refresh_i3status
 
+# SHUTTER (screenshots)
+bindsym Print exec --no-startup-id shutter -a -c
+bindsym $mod+Print exec --no-startup-id shutter
