@@ -1,0 +1,13 @@
+packages:
+  ubuntu:
+    apt:
+      - 'git'
+      - 'luarocks'
+      - 'neovim'
+      - 'tmux'
+  debian:
+    apt:
+      - 'git'
+      - 'luarocks'
+      - 'neovim'
+      - 'tmux'

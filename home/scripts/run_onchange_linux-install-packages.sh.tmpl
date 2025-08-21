@@ -1,0 +1,31 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    distro=$ID
+else
+    echo "Cannot detect OS. /etc/os-release not found."
+    exit 1
+fi
+
+case "$distro" in
+    ubuntu)
+        sudo apt update
+        sudo apt install -y {{ range .packages.ubuntu.apt -}} {{ . | quote }} {{ end -}}
+        ;;
+    debian)
+        sudo apt update
+        sudo apt install -y {{ range .packages.debian.apt -}} {{ . | quote }} {{ end -}}
+	;;
+    arch)
+        sudo pacman -Sy
+        ;;
+    *)
+        echo "Unsupported distribution: $distro"
+	exit 1
+	;;
+esac
+
+
+{{ end -}}
