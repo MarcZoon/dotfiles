@@ -7,6 +7,7 @@ return {
 		},
 		config = function()
 			require("lsp/pylsp")
+			require("lsp/bicep")
 		end,
 	},
 	{
