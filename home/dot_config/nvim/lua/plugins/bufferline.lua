@@ -11,7 +11,8 @@ return {
 	},
 	keys = {
 		{ "<leader>bc", ":Bdelete<CR>", desc = "[B]uffer [P]in Toggle" },
-		{ "<leader>bp", "<Cmd>BufferLineTogglePin<CR>", desc = "[B]uffer [P]in Toggle" },
+		{ "<leader>bP", "<Cmd>BufferLineTogglePin<CR>", desc = "[B]uffer [P]in Toggle" },
+		{ "<leader>bpp", "<Cmd>BufferLinePick<CR>", desc = "[B]uffer [P]ick" },
 		{ "<leader>bpc", "<Cmd>BufferLinePickClose<CR>", desc = "[B]uffer [P]ick [C]lose" },
 		{ "<leader>b[", "<Cmd>BufferLineCyclePrev<CR>", desc = "Prev Buffer" },
 		{ "<leader>b]", "<Cmd>BufferLineCycleNext<CR>", desc = "Next Buffer" },
