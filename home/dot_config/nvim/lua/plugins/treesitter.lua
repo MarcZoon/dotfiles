@@ -4,12 +4,14 @@ return {
 	lazy = false,
 	build = ":TSUpdate",
 	main = "nvim-treesitter.configs",
+	dependencies = { "OXY2DEV/markview.nvim" },
 	opts = {
 		ensure_installed = {
 			"bash",
 			"bicep",
 			"dockerfile",
 			"git_config",
+			"html",
 			"javascript",
 			"json",
 			"lua",
