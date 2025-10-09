@@ -27,6 +27,7 @@ return {
 				end
 				return true
 			end,
+			copilot_node_command = vim.fn.expand("$HOME") .. "/.nvm/versions/node/v22.20.0/bin/node",
 		})
 	end,
 }
