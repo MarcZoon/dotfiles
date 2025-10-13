@@ -40,6 +40,7 @@ return {
 				automatic_enable = true,
 				ensure_installed = {
 					"lua_ls",
+					"marksman",
 					"pylsp",
 					"ruff",
 				},
