@@ -8,17 +8,17 @@ return {
 			formatters_by_ft = {
 				css = { "prettierd" },
 				html = { "prettierd" },
-				javascript = { "prettierd" },
-				javascriptreact = { "prettierd" },
+				javascript = { "eslint_d", "prettierd" },
+				javascriptreact = { "eslint_d", "prettierd" },
 				json = { "prettierd" },
 				lua = { "stylua" },
-				markdown = { "prettierd" },
+				markdown = { "markdownlint-cli2" },
 				python = {
 					"ruff_fix",
 					"ruff_format",
 				},
-				typescript = { "prettierd" },
-				typescriptreact = { "prettierd" },
+				typescript = { "eslint_d", "prettierd" },
+				typescriptreact = { "eslint_d", "prettierd" },
 			},
 			format_on_save = {
 				lsp_format = "fallback",
