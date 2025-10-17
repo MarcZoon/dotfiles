@@ -12,12 +12,12 @@ fi
 case "$distro" in
     ubuntu)
         sudo apt update
-        sudo apt install -y {{ range .packages.ubuntu.apt -}} {{ . | quote }} {{ end -}}
+        sudo apt install -y {{ range .packages.apt -}} {{ . | quote }} {{ end -}}
         ;;
     debian)
         sudo apt update
-        sudo apt install -y {{ range .packages.debian.apt -}} {{ . | quote }} {{ end -}}
-	;;
+        sudo apt install -y {{ range .packages.apt -}} {{ . | quote }} {{ end -}}
+	    ;;
     arch)
         sudo pacman -Sy
         ;;
@@ -26,6 +26,17 @@ case "$distro" in
 	exit 1
 	;;
 esac
+
+# Install NVM and node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm use {{ .versions.node }}
+
+# Install global npm packages
+{{- range .packages.npm }}
+npm install -g {{ . | quote }}
+{{- end }}
 
 
 {{ end -}}

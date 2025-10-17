@@ -1,13 +1,8 @@
 packages:
-  ubuntu:
-    apt:
-      - 'git'
-      - 'luarocks'
-      - 'neovim'
-      - 'tmux'
-  debian:
-    apt:
-      - 'git'
-      - 'luarocks'
-      - 'neovim'
-      - 'tmux'
+  apt:
+    - 'curl'
+    - 'git'
+    - 'luarocks'
+    - 'tmux'
+  npm:
+    - 'tree-sitter-cli'
