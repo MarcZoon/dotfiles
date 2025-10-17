@@ -4,7 +4,7 @@ return {
 	lazy = false,
 	build = ":TSUpdate",
 	main = "nvim-treesitter.configs",
-	dependencies = { "OXY2DEV/markview.nvim" },
+	dependencies = {},
 	opts = {
 		ensure_installed = {
 			"bash",
@@ -14,6 +14,7 @@ return {
 			"html",
 			"javascript",
 			"json",
+			"latex",
 			"lua",
 			"markdown",
 			"markdown_inline",
