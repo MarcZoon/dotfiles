@@ -12,9 +12,13 @@ return {
 				enabled = false,
 			},
 			filetypes = {
+				css = true,
+				html = true,
 				javascript = true,
+				json = true,
 				lua = true,
 				python = true,
+				toml = true,
 				typescript = true,
 				["*"] = false,
 			},
