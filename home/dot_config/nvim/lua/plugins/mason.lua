@@ -13,6 +13,7 @@ return {
 		opts = {
 			automatic_installation = true,
 			ensure_installed = {
+				"arduino_language_server",
 				"lua_ls",
 				"marksman",
 				"pylsp",
