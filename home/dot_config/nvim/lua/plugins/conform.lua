@@ -7,6 +7,7 @@ return {
 		opts = {
 			formatters_by_ft = {
 				css = { "prettierd" },
+				go = { "gofumpt" },
 				html = { "prettierd" },
 				javascript = { "eslint_d", "prettierd" },
 				javascriptreact = { "eslint_d", "prettierd" },

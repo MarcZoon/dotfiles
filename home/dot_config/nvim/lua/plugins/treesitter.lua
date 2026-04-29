@@ -20,6 +20,7 @@ return {
 			"markdown_inline",
 			"nginx",
 			"python",
+			"rust",
 			"ssh_config",
 			"tmux",
 			"toml",

@@ -12,6 +12,7 @@ return {
 				enabled = false,
 			},
 			filetypes = {
+				bash = true,
 				css = true,
 				html = true,
 				javascript = true,
